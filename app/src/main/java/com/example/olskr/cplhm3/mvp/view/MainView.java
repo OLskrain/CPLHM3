@@ -7,4 +7,15 @@ import com.arellomobile.mvp.viewstate.strategy.StateStrategyType;
 @StateStrategyType(value = AddToEndSingleStrategy.class)
 public interface MainView extends MvpView {
 
+    void pickImage();
+
+    void showConvertProgressDialog();
+
+    void dismissConvertProgressDialog();
+
+    void showConvertationSuccessMessage();
+
+    void showConvertationCanceledMessage();
+
+    void showConvertationFailedMessage();
 }
